@@ -1,0 +1,15 @@
+# Ignore node_modules
+node_modules
+
+# Ignore environment variables
+.env
+
+# Ignore Mac System files
+.DS_store
+
+.vscode
+
+*.zip
+
+# Ignore test ideas
+/dev/
