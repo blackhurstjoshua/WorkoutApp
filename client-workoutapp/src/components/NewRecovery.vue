@@ -1,9 +1,9 @@
 <template>
   <div style="height: 100%">
-    <div class="pa-6 purple--text text--darken-2 text-h5 d-inline-flex">
-      New Cardio Plan
+    <div class="pa-6 yellow--text text--darken-2 text-h5 d-inline-flex">
+      New Recovery Plan
     </div>
-    <v-btn class="mr-5 mt-5 float-right" outlined large color="purple lighten-2" @click="save">
+    <v-btn class="mr-5 mt-5 float-right" outlined large color="yellow lighten-2" @click="save">
       Save
     </v-btn>
     <v-divider dark></v-divider>
@@ -57,7 +57,7 @@
         <v-dialog v-model="dialog" persistent max-width="600px">
           <!-- Dialog Btn -->
           <template v-slot:activator="{ on, attrs }">
-            <v-btn class="purple lighten-2" large v-bind="attrs" v-on="on">
+            <v-btn class="yellow lighten-2" large v-bind="attrs" v-on="on">
               Add <v-icon>mdi-plus</v-icon>
             </v-btn>
           </template>
@@ -76,7 +76,7 @@
                   </v-col>
                   <v-col cols="12">
                     <v-text-field
-                      label="Cardio*"
+                      label="Recovery Method*"
                       v-model="exercise.title"
                       required
                     ></v-text-field>
@@ -112,10 +112,10 @@
 
 <script>
 export default {
-  name: "NewCardio",
+  name: "NewRecovery",
   components: {},
   data: () => ({
-    plan: {
+   plan: {
       name: "",
       exercises: [],
     },
@@ -165,7 +165,9 @@ export default {
         console.log("Hello World, saving new plan");
     }
   }
-};
+}
 </script>
 
-<style></style>
+<style>
+
+</style>

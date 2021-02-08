@@ -2,7 +2,7 @@
   <div>
     <!-- Title -->
     <div class="pa-6 teal--text text--darken-2 text-h5">
-      Choose a style
+      Select a type
     </div>
     <v-divider dark></v-divider>
     <v-container fluid>
@@ -32,12 +32,12 @@
       </v-row>
       <v-row>
         <v-col align="center" cols="6">
-          <v-btn height="75px" width="100%" large class="green lighten-2">
+          <v-btn height="75px" width="100%" large class="green lighten-2" to="/plans/newplan/activity">
             <v-icon x-large>mdi-hiking</v-icon>
           </v-btn>
         </v-col>
         <v-col align="center" cols="6">
-          <v-btn height="75px" width="100%" large class="yellow lighten-2">
+          <v-btn height="75px" width="100%" large class="yellow lighten-2" to="/plans/newplan/recovery">
             <v-icon x-large>mdi-yoga</v-icon>
           </v-btn>
         </v-col>

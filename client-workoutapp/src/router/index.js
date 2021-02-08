@@ -39,6 +39,16 @@ const routes = [
     path: "/plans/newplan/cardio",
     name: "NewCardio",
     component: () => import('../components/NewCardio.vue')
+  },
+  {
+    path: "/plans/newplan/activity",
+    name: "NewActivity",
+    component: () => import('../components/NewActivity.vue')
+  },
+  {
+    path: "/plans/newplan/recovery",
+    name: "NewRecovery",
+    component: () => import('../components/NewRecovery.vue')
   }
 ];
 

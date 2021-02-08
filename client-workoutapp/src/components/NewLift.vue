@@ -1,13 +1,13 @@
 <template>
   <div style="height: 100%">
-    <div class="pa-6 teal--text text--darken-2 text-h5 d-inline-flex">
+    <div class="pa-6 red--text text--darken-2 text-h5 d-inline-flex">
       New Lift Plan
     </div>
     <v-btn
       class="mr-5 mt-5 float-right"
       outlined
       large
-      color="teal lighten-2"
+      color="red lighten-2"
       @click="save"
     >
       Save
