@@ -26,3 +26,16 @@ app.listen(process.env.PORT, () => {
     .catch(err => console.log(err))
   console.log('Listening on port ', process.env.PORT)
 })
+
+
+
+
+/*
+
+* The Log model will save a log of what happened.
+Todo Create classes for Logs
+Todo Create error class handling
+Todo Create model for users and workouts
+Todo Create routes for REST api
+
+*/
