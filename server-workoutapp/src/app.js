@@ -9,11 +9,13 @@ const mongoose = require('mongoose')
 
 // routes
 const helloWorld = require('./routes/helloWorld')
+const user = require('./routes/user')
 
 // middleware
 app.use(bodyparser.json())
 
 app.use('/', helloWorld)
+app.use('/user', user)
 
 
 app.listen(process.env.PORT, () => {
@@ -24,7 +26,8 @@ app.listen(process.env.PORT, () => {
     })
     .then(console.log('Connected to DB'))
     .catch(err => console.log(err))
-  console.log('Listening on port ', process.env.PORT)
+  const url = `http://localhost:${process.env.PORT}`
+  console.log(url)
 })
 
 

@@ -13,3 +13,7 @@ node_modules
 
 # Ignore test ideas
 /dev/
+
+
+# Notes for user model
+MockModel.json

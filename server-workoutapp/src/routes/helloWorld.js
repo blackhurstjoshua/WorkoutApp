@@ -1,6 +1,6 @@
 const router = require('express').Router()
 const TestModel = require('../models/TestModel')
-const Log = require('../models/ActivitLog')
+const Log = require('../models/Log')
 
 router.get('/', (req, res, next) => {
   try {
