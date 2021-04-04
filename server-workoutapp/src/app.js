@@ -1,6 +1,7 @@
 // express
 const express = require('express')
 const app = express()
+const morgan = require('morgan')
 
 // packages
 require('dotenv').config()
@@ -13,6 +14,7 @@ const user = require('./routes/user')
 
 // middleware
 app.use(bodyparser.json())
+app.use(morgan('tiny'))
 
 app.use('/', helloWorld)
 app.use('/user', user)
