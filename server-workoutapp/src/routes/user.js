@@ -13,7 +13,7 @@ router.get('/:id', async (req, res, next) => {
     console.log(err)
     res.status(400).json(err.message)
   }
- })
+})
 
 router.post('/', async (req, res, next) => {
 
@@ -36,6 +36,18 @@ router.put('/:id', async (req, res, next) => {
     
     let savedUser = await user.save()
     res.json(savedUser)
+  } catch(err) {
+    console.log(err)
+    res.status(400).json(err.message)
+  }
+})
+
+// ! DELETE NOT WORKING. DON'T KNOW WHY
+router.delete('/:id', async (req, res, next) => {
+  try {
+    let response = User.deleteOne({ _id: req.params.id })
+
+    res.send('deleted')
   } catch(err) {
     console.log(err)
     res.status(400).json(err.message)
